@@ -152,6 +152,16 @@ configure = ($routeProvider, $locationProvider, $httpProvider, $provide, $tgEven
         }
     )
 
+    # Project - t4
+    $routeProvider.when("/project/new/t4",
+        {
+            title: "PROJECT.CREATE.TITLE",
+            template: "<tg-create-project-form type=\"t4\"></tg-create-project-form>",
+            loader: true
+        }
+    )
+
+
     # Project - duplicate
     $routeProvider.when("/project/new/duplicate",
         {

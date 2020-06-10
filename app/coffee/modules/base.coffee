@@ -60,6 +60,7 @@ urls = {
     "create-project": "/project/new"
     "create-project-scrum": "/project/new/scrum"
     "create-project-kanban": "/project/new/kanban"
+    "create-project-t4": "/project/new/t4"
     "create-project-duplicate": "/project/new/duplicate"
     "create-project-import": "/project/new/import"
     "create-project-import-platform": "/project/new/import/:platform"

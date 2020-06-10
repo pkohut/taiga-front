@@ -54,6 +54,8 @@ class CreateProjectController
             @.displayScrumDesc = !@.displayScrumDesc
         if type == 'kanban'
             @.displayKanbanDesc = !@.displayKanbanDesc
+        if type == 't4'
+            @.displayT4Desc = !@.displayT4Desc
 
 
 angular.module("taigaProjects").controller("CreateProjectCtrl", CreateProjectController)

@@ -41,6 +41,25 @@
                         .create-project-selector-long-description(ng-show="vm.displayKanbanDesc")
                             p(translate="PROJECT.CREATE.TEMPLATE_KANBAN_LONGDESC")
             li
+                a.e2e-create-project-kanban(
+                    tg-nav="create-project-t4"
+                    title="{{'PROJECT.CREATE.TEMPLATE_T4' | translate}}",
+                    href=""
+                )
+                    .create-project-selector-icon
+                        tg-svg(svg-icon="icon-kanban")
+
+                    .create-project-selector-template-wrapper
+                        p.create-project-selector-template(translate="PROJECT.CREATE.TEMPLATE_T4")
+                        p.create-project-selector-description(translate="PROJECT.CREATE.TEMPLATE_T4_DESC")
+                        .create-project-selector-question
+                            tg-svg(
+                                svg-icon="icon-question"
+                                ng-click="vm.displayHelp('t4', $event)"
+                            )
+                        .create-project-selector-long-description(ng-show="vm.displayT4Desc")
+                            p(translate="PROJECT.CREATE.TEMPLATE_T4_LONGDESC")
+            li
                 a.e2e-duplicate-project(
                     tg-nav="create-project-duplicate"
                     title="{{'PROJECT.CREATE.DUPLICATE' | translate}}",

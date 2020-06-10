@@ -15,6 +15,14 @@
         translate="PROJECT.CREATE.TEMPLATE_KANBAN_DESC"
     )
 
+    .create-project-title-wrapper(ng-if="vm.type == 't4'")
+        tg-svg(svg-icon="icon-kanban")
+        h1.create-project-title(translate="PROJECT.CREATE.TEMPLATE_T4")
+    h3.create-project-description(
+        ng-if="vm.type == 't4'"
+        translate="PROJECT.CREATE.TEMPLATE_T4_DESC"
+    )
+
     form(
         name="projectForm",
         ng-submit="vm.submit()"

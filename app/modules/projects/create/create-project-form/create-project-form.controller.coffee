@@ -40,8 +40,10 @@ class CreatetProjectFormController
 
         if @.type == 'scrum'
             @.projectForm.creation_template = 1
-        else
+        else if @.type == 'kanban'
             @.projectForm.creation_template = 2
+        else
+            @.projectForm.creation_template = 3
 
     submit: () ->
         @.formSubmitLoading = true
