@@ -46,7 +46,7 @@ if (argv.theme) {
     themes.set(argv.theme);
 }
 
-var version = "v-" + Date.now();
+var version = "v-team4";
 
 var paths = {};
 paths.app = "app/";

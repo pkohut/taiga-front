@@ -156,7 +156,7 @@ configure = ($routeProvider, $locationProvider, $httpProvider, $provide, $tgEven
     $routeProvider.when("/project/new/t4",
         {
             title: "PROJECT.CREATE.TITLE",
-            template: "<tg-create-project-form type=\"t4\"></tg-create-project-form>",
+            template: "<tg-create-project-form type=\"kanban\"></tg-create-project-form>",
             loader: true
         }
     )
