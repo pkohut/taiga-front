@@ -150,7 +150,7 @@
             "ASSIGNED": "Assigned",
             "ASSIGNED_TO": "Assigned to",
             "ASSIGNED_USERS": "Assigned users",
-            "POINTS": "Points",
+            "POINTS": "Hours",
             "IS_BLOCKED": "is blocked",
             "REF": "Ref",
             "VOTES": "Votes",
@@ -512,7 +512,7 @@
             "BACKLOG_DESCRIPTION": "Manage your user stories to maintain an organized view of upcoming and prioritized work.",
             "NUMBER_SPRINTS": "Expected number of sprints",
             "NUMBER_SPRINTS_HELP": "0 for an undetermined number",
-            "NUMBER_US_POINTS": "Expected total of story points",
+            "NUMBER_US_POINTS": "Expected total of project hours",
             "NUMBER_US_POINTS_HELP": "0 for an undetermined number",
             "KANBAN": "Kanban",
             "KANBAN_DESCRIPTION": "Organize your project in a lean way with this board.",
@@ -609,10 +609,10 @@
             "ERROR_DELETE_ALL": "You can't delete all values."
         },
         "PROJECT_VALUES_POINTS": {
-            "TITLE": "Points",
-            "SUBTITLE": "Specify the points your user stories could be estimated to",
-            "US_TITLE": "User story points",
-            "ACTION_ADD": "Add new point"
+            "TITLE": "Hours",
+            "SUBTITLE": "Specify the hours your project task could be estimated to",
+            "US_TITLE": "Project task hours",
+            "ACTION_ADD": "Add new hours"
         },
         "PROJECT_VALUES_PRIORITIES": {
             "TITLE": "Priorities",
@@ -755,7 +755,7 @@
         "DEFAULT_VALUES": {
             "LABEL_EPIC_STATUS": "Default value for epic status selector",
             "LABEL_US_STATUS": "Default value for user story status selector",
-            "LABEL_POINTS": "Default value for points selector",
+            "LABEL_POINTS": "Default value for hours selector",
             "LABEL_TASK_STATUS": "Default value for task status selector",
             "LABEL_ISSUE_TYPE": "Default value for issue type selector",
             "LABEL_ISSUE_STATUS": "Default value for issue status selector",
@@ -785,7 +785,7 @@
         },
         "SUBMENU_PROJECT_VALUES": {
             "STATUS": "Statuses",
-            "POINTS": "Points",
+            "POINTS": "Hours",
             "PRIORITIES": "Priorities",
             "SEVERITIES": "Severities",
             "TYPES": "Types",
@@ -1241,7 +1241,7 @@
         "SECTION_NAME": "User story",
         "LINK_TASKBOARD": "Taskboard",
         "TITLE_LINK_TASKBOARD": "Go to the taskboard",
-        "TOTAL_POINTS": "total points",
+        "TOTAL_POINTS": "total hours",
         "ADD": "+ Add a new user story",
         "ADD_BULK": "Add some new user stories in bulk",
         "PROMOTED_FROM_ISSUE": "This user story has been promoted from issue:",
@@ -1288,7 +1288,7 @@
         "ACTIVITIES_COUNT": "{{activities}} Activities",
         "TAGS_ADDED": "tags added:",
         "TAGS_REMOVED": "tags removed:",
-        "US_POINTS": "{{role}} points",
+        "US_POINTS": "{{role}} hours",
         "NEW_ATTACHMENT": "new attachment:",
         "DELETED_ATTACHMENT": "deleted attachment:",
         "UPDATED_ATTACHMENT": "updated attachment ({{filename}}):",
@@ -1323,16 +1323,16 @@
         "PAGE_DESCRIPTION": "The backlog panel, with user stories and sprints of the project {{projectName}}: {{projectDescription}}",
         "SECTION_NAME": "Backlog",
         "CUSTOMIZE_GRAPH": "Customize your backlog graph",
-        "CUSTOMIZE_GRAPH_TEXT": "To have a nice graph that helps you follow the evolution of the project you have to set up the points and sprints through the",
+        "CUSTOMIZE_GRAPH_TEXT": "To have a nice graph that helps you follow the evolution of the project you have to set up the hours and sprints through the",
         "CUSTOMIZE_GRAPH_ADMIN": "Admin",
-        "CUSTOMIZE_GRAPH_TITLE": "Set up the points and sprints through the Admin",
+        "CUSTOMIZE_GRAPH_TITLE": "Set up the hours and sprints through the Admin",
         "MOVE_US_TO_CURRENT_SPRINT": "Move to Current Sprint",
         "MOVE_US_TO_LATEST_SPRINT": "Move to latest Sprint",
         "EMPTY": "The backlog is empty!",
         "CREATE_NEW_US": "Create a new user story",
         "CREATE_NEW_US_EMPTY_HELP": "You may want to create a new user story",
-        "EXCESS_OF_POINTS": "Excess of points",
-        "PENDING_POINTS": "Pending Points",
+        "EXCESS_OF_POINTS": "Excess of hours",
+        "PENDING_POINTS": "Pending hours",
         "CLOSED_POINTS": "closed",
         "COMPACT_SPRINT": "Compact Sprint",
         "GO_TO_TASKBOARD": "Go to the taskboard of {{::name}}",
@@ -1343,11 +1343,11 @@
         "DOOMLINE": "Project Scope [Doomline]",
         "CHART": {
             "XAXIS_LABEL": "Sprints",
-            "YAXIS_LABEL": "Points",
-            "OPTIMAL": "Optimal pending points for sprint \"{{sprintName}}\" should be {{value}}",
-            "REAL": "Real pending points for sprint \"{{sprintName}}\" is {{value}}",
-            "INCREMENT_TEAM": "Incremented points by team requirements for sprint \"{{sprintName}}\" is {{value}}",
-            "INCREMENT_CLIENT": "Incremented points by client requirements for sprint \"{{sprintName}}\" is {{value}}"
+            "YAXIS_LABEL": "Hours",
+            "OPTIMAL": "Optimal pending hours for sprint \"{{sprintName}}\" should be {{value}}",
+            "REAL": "Real pending hours for sprint \"{{sprintName}}\" is {{value}}",
+            "INCREMENT_TEAM": "Incremented hours by team requirements for sprint \"{{sprintName}}\" is {{value}}",
+            "INCREMENT_CLIENT": "Incremented hours by client requirements for sprint \"{{sprintName}}\" is {{value}}"
         },
         "TAGS": {
             "TOGGLE": "Toggle tags visibility",
@@ -1365,20 +1365,20 @@
             "TITLE_COLUMN_POINTS": "Select view per Role"
         },
         "SPRINT_SUMMARY": {
-            "TOTAL_POINTS": "total<br />points",
-            "COMPLETED_POINTS": "completed<br />points",
+            "TOTAL_POINTS": "total<br />hours",
+            "COMPLETED_POINTS": "completed<br />hours",
             "OPEN_TASKS": "open<br />tasks",
             "CLOSED_TASKS": "closed<br />tasks",
             "IOCAINE_DOSES": "iocaine<br />doses",
             "SHOW_STATISTICS_TITLE": "Show statistics",
             "TOGGLE_BAKLOG_GRAPH": "Show/Hide burndown graph",
-            "POINTS_PER_ROLE": "Points per role"
+            "POINTS_PER_ROLE": "Hours per role"
         },
         "SUMMARY": {
-            "PROJECT_POINTS": "project<br />points",
-            "DEFINED_POINTS": "defined<br />points",
-            "CLOSED_POINTS": "closed<br />points",
-            "POINTS_PER_SPRINT": "points /<br />sprint"
+            "PROJECT_POINTS": "project<br />hours",
+            "DEFINED_POINTS": "defined<br />hours",
+            "CLOSED_POINTS": "closed<br />hours",
+            "POINTS_PER_SPRINT": "hours /<br />sprint"
         },
         "FILTERS": {
             "TOGGLE": "Toggle filters visibility",
@@ -1424,15 +1424,15 @@
             "TITLE_ACTION_UNFOLD": "Unfold column",
             "TITLE_ACTION_FOLD_ROW": "Fold Row",
             "TITLE_ACTION_UNFOLD_ROW": "Unfold Row",
-            "FIELD_POINTS": "points",
+            "FIELD_POINTS": "hours",
             "ROW_STORYLESS_TASKS_TITLE": "Storyless tasks",
             "ROW_ISSUES_TITLE": "Sprint issues"
         },
         "CHARTS": {
             "XAXIS_LABEL": "Days",
-            "YAXIS_LABEL": "Points",
-            "OPTIMAL": "Optimal pending points for day {{formattedDate}} should be {{roundedValue}}",
-            "REAL": "Real pending points for day {{formattedDate}} is {{roundedValue}}",
+            "YAXIS_LABEL": "Hours",
+            "OPTIMAL": "Optimal pending hours for day {{formattedDate}} should be {{roundedValue}}",
+            "REAL": "Real pending hours for day {{formattedDate}} is {{roundedValue}}",
             "DATE": "DD MMMM YYYY"
         },
         "MOVE_TO_SPRINT": {
@@ -1587,7 +1587,7 @@
         "COLUMN_NIGHT_SHIFT": "Night Shift",
         "EXPLANATION_COLUMN_NIGHT_SHIFT": "Tasks closed",
         "COLUMN_TOTAL_POWER": "Total Power",
-        "EXPLANATION_COLUMN_TOTAL_POWER": "Total Points",
+        "EXPLANATION_COLUMN_TOTAL_POWER": "Total Hours",
         "SECTION_TITLE_TEAM": "Team >",
         "SECTION_FILTER_ALL": "All",
         "CONFIRM_LEAVE_PROJECT": "Are you sure you want to leave the project?",
