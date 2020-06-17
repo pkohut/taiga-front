@@ -55,6 +55,7 @@ paths.distVersion = paths.dist + version + "/";
 paths.tmp = "tmp/";
 paths.extras = "extras/";
 paths.modules = "node_modules/";
+paths._coffee = paths.app + "coffee";
 
 paths.jade = [
     paths.app + "**/*.jade"
@@ -674,6 +675,22 @@ gulp.task("link-images", ["copy-images"], function(cb) {
     cb();
 });
 
+
+// paul
+gulp.task("link-coffee", function(cb) {
+
+    cwd = process.cwd() + "/";
+
+    try {
+        fs.unlinkSync(cwd+paths.dist+version+"js/coffee");
+    } catch (exception) {
+        process.stdout.write("\nBlowed up")
+    }
+
+    fs.symlinkSync(cwd +paths._coffee, cwd+paths.dist+version+"/js/coffee");
+    cb();
+});
+
 gulp.task("copy", [
     "copy-fonts",
     "copy-theme-fonts",
@@ -732,7 +749,7 @@ gulp.task("express", function() {
         //Just send the index.html for other files to support HTML5Mode
         res.sendFile("index.html", {root: __dirname + "/dist/"});
     });
-
+    
     app.listen(9001);
 });
 
@@ -771,5 +788,5 @@ gulp.task("default", function(cb) {
         "jade-deploy",
         "express",
         "watch"
-    ], cb);
+    ], "link-coffee", cb);
 });
