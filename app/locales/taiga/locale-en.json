@@ -1142,7 +1142,7 @@
             "EDIT_ISSUE": "Edit issue",
             "EDIT_US": "Edit user story",
             "ADD_EXISTING_ISSUE": "Add issue to {{ targetName }}",
-            "CONFIRM_CLOSE": "You have not saved changes.\nAre you sure you want to close the form?",
+            "CONFIRM_CLOSE": "You have no saved changes.\nAre you sure you want to close the form?",
             "EXISTING_ISSUE": "Existing issue",
             "CHOOSE_EXISTING_ISSUE": "Which issue?",
             "ADD_ISSUE": "Add issue",
